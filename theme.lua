@@ -18,23 +18,23 @@ local colors                                    = require("colors")
 
 theme.font                                      = "Berkeley Mono Regular 14"
 
-theme.primary                                   = colors.palette.green.hex
+theme.primary                                   = colors.palette.statusline1.hex
 
-theme.bg_normal                                 = colors.palette.crust.hex
+theme.bg_normal                                 = colors.palette.bg0.hex
 -- theme.bg_focus                                  = "#535d6c"
 theme.bg_focus                                  = theme.primary
 theme.bg_urgent                                 = colors.palette.red.hex
 theme.bg_minimize                               = "#444444"
 theme.bg_systray                                = theme.bg_normal
 
-theme.fg_normal                                 = colors.palette.text.hex
-theme.fg_focus                                  = colors.palette.crust.hex
-theme.fg_urgent                                 = colors.palette.crust.hex
+theme.fg_normal                                 = colors.palette.fg.hex
+theme.fg_focus                                  = colors.palette.bg0.hex
+theme.fg_urgent                                 = colors.palette.bg0.hex
 theme.fg_minimize                               = "#ffffff"
 
 theme.useless_gap                               = dpi(12)
 theme.border_width                              = dpi(4)
-theme.border_normal                             = colors.palette.crust.hex
+theme.border_normal                             = colors.palette.bg0.hex
 theme.border_focus                              = theme.primary
 theme.border_marked                             = colors.palette.red.hex
 
@@ -66,8 +66,8 @@ theme.taglist_squares_unsel                     = theme_assets.taglist_squares_u
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
 
-theme.notification_bg                           = colors.palette.crust.hex
-theme.notification_fg                           = colors.palette.text.hext
+theme.notification_bg                           = colors.palette.bg0.hex
+theme.notification_fg                           = colors.palette.fg.hext
 theme.notification_border_color                 = colors.palette.green.hex
 theme.notification_margin                       = dpi(15)
 naughty.config.defaults.margin                  = theme.notification_margin
@@ -113,7 +113,8 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path .. "default/titleb
 theme.titlebar_maximized_button_normal_active   = themes_path .. "default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active    = themes_path .. "default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper                                 = "/home/alexandersix/wallpapers/catppuccin/shaded_landscape.png"
+-- theme.wallpaper                                 = "/home/alexandersix/wallpapers/catppuccin/shaded_landscape.png"
+theme.wallpaper                                 = "/home/alexandersix/wallpapers/everforest/polyscape_2.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh                              = themes_path .. "default/layouts/fairhw.png"

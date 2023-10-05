@@ -163,7 +163,7 @@ awful.screen.connect_for_each_screen(function(s)
             mylauncher,
             s.mytaglist,
             s.mypromptbox,
-            bg = colors.palette.crust.hex
+            bg = colors.palette.bg0.hex
         },
         {
             layout = wibox.layout.fixed.horizontal,
