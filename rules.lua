@@ -113,5 +113,18 @@ awful.rules.rules = {
         rule = { name = "Cron -.*" },
         properties = { screen = 2, tag = " cal ", floating = false }
     },
-}
+
+    -- Set Steam
+    {
+        rule_any = { class = { "Steam" } },
+        properties = {
+            screen = 1,
+            tag = " misc ",
+            titlebars_enabled = false,
+            floating = true,
+            border_width = 0,
+            border_color = 0,
+            size_hints_honor = false,
+        },
+    }, }
 -- }}}
